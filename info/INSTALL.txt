@@ -1,0 +1,2 @@
+# link latest version of BatWaecher-Ardu-Path
+#ln -s /home/cubie/HD/SAVE/BatteriWaecher006 /home/cubie/BatWaechter

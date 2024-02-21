@@ -1,0 +1,7 @@
+while true; do
+  ./graph
+  ./graph heute
+  ./graphWatt
+  ./graphWatt heute
+  sleep 1200
+done

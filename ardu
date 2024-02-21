@@ -1,0 +1,25 @@
+# schreiben nicht möglich
+stty -F /dev/ttyS0 115200 raw
+#sleep 1
+# schreiben OK
+
+LogTmp="/tmp/BatWaechter.output"
+
+
+stty -F /dev/ttyS0 cs8 115200 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
+
+echo "starte $0" >> "$LogTmp"
+cat /dev/ttyS0 >> "$LogTmp" &
+PID=$!
+echo "$PID"
+# kill background process on SIGTERM
+#trap 'kill $PID; echo ciao; exit' SIGINT SIGTERM
+
+tail -f $LogTmp &
+PID2=$!
+echo "$PI2"
+trap 'kill $PID; kill $PID2; echo ciao; rm $LogTmp; exit' SIGINT SIGTERM
+
+
+
+cat > /dev/ttyS0 
