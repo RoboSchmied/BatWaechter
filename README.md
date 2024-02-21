@@ -2,7 +2,7 @@
 Schuetzt Batterie vor Tiefenendladung durch Abschaltung "grosser" Verbraucher bei Unterspannung
 
 
-  - v0.1  Baterie-Spannung messen  A1
+  - v0.1  Batterie-Spannung messen  A1
   - v0.2  Solar-Strom messen A2
   - v0.3  ohne Delay, viele Messungen und Schnitt nach Delay-Wert ausgeben
   - v0.4  Weiterer Amp Messer auf A3    VerbraucherZähler oder BW-Melder-AmpScan>
